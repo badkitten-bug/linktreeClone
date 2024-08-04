@@ -43,9 +43,9 @@ const Home: React.FC = () => {
       style={{ backgroundImage: "url('/img/background.png')" }}
     >
       <ProfilePicture src="/jzolutions.png" alt="Profile Picture" />
-      <ProfileName name="@Jzolutions" subname="Desarrollo de Software con Odoo." />
+      <ProfileName name="@Jzolutions" subname="Desarrollo de Software con Odoo." iconUrl="/check.svg" />
       <div className="w-full sm:w-2/3 lg:w-1/2 ">
-        {links.map((link, idx) => (
+        {links.map((link) => (
           <LinkButton
             key={link.id}
             label={link.label}
