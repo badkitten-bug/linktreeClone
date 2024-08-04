@@ -6,26 +6,31 @@ import SocialLinks from "@/components/SocialLinks";
 const Home: React.FC = () => {
   const links = [
     {
-      label: "Pagina web para cuidar casas",
+      id: 1,
+      label: "Desarrolla tu ERP con Odoo",
       url: "https://www.google.com",
       iconUrl: "/github.png",
     },
     {
-      label: "My Portfolio",
+      id: 2,
+      label: "Canal de Youtube",
+      url: "https://www.google.com",
+      iconUrl: "/github.png",
+    },  
+    {
+      id: 3,
+      label: "Siguenos Facebook",
       url: "https://www.google.com",
       iconUrl: "/github.png",
     },
     {
-      label: "Business Blog",
+      id: 4,
+      label: "Webs desde 1 sol",
       url: "https://www.google.com",
       iconUrl: "/github.png",
     },
     {
-      label: "Vuelos Baratos",
-      url: "https://www.google.com",
-      iconUrl: "/github.png",
-    },
-    {
+      id:5,
       label: "Instagram",
       url: "https://www.google.com",
       iconUrl: "/github.png",
@@ -34,15 +39,15 @@ const Home: React.FC = () => {
 
   return (
     <main
-      className="flex flex-col items-center p-8 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat"
+      className="flex flex-col items-center p-0 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/img/background.png')" }}
     >
-      <ProfilePicture src="/dinosaur.png" alt="Profile Picture" />
-      <ProfileName name="@Steve" subname="HOUSITTING POR EL MUNDO." />
-      <div className="w-full sm:w-2/3 lg:w-1/2">
+      <ProfilePicture src="/jzolutions.png" alt="Profile Picture" />
+      <ProfileName name="@Jzolutions" subname="Desarrollo de Software con Odoo." />
+      <div className="w-full sm:w-2/3 lg:w-1/2 ">
         {links.map((link, idx) => (
           <LinkButton
-            key={idx}
+            key={link.id}
             label={link.label}
             url={link.url}
             iconUrl={link.iconUrl}
