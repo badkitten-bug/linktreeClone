@@ -39,7 +39,7 @@ const Home: React.FC = () => {
 
   return (
     <main
-      className="flex flex-col items-center p-0 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat"
+      className="flex flex-col items-center p-0 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat p-16"
       style={{ backgroundImage: "url('/img/background.png')" }}
     >
       <ProfilePicture src="/jzolutions.png" alt="Profile Picture" />
