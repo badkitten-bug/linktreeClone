@@ -7,16 +7,16 @@ const Home: React.FC = () => {
   const links = [
     {
       id: 1,
-      label: "Desarrolla tu ERP con Odoo",
-      url: "https://www.google.com",
+      label: "ERP con Odoo",
+      url: "https://www.jzolutions.com",
       iconUrl: "/github.png",
     },
     {
       id: 2,
       label: "Canal de Youtube",
-      url: "https://www.google.com",
+      url: "https://www.youtube.com/@jzolutions",
       iconUrl: "/github.png",
-    },  
+    },
     {
       id: 3,
       label: "Siguenos Facebook",
@@ -32,14 +32,14 @@ const Home: React.FC = () => {
     {
       id:5,
       label: "Instagram",
-      url: "https://www.google.com",
+      url: "https://www.instagram.com/jzolutions/",
       iconUrl: "/github.png",
     },
   ];
 
   return (
     <main
-      className="flex flex-col items-center p-0 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat p-16"
+      className="flex flex-col items-center  p-16 sm:p-16 md:p-24 bg-gray-100 min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/img/background.png')" }}
     >
       <ProfilePicture src="/jzolutions.png" alt="Profile Picture" />

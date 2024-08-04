@@ -34,4 +34,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .hover-text:hover {
+    color: #d5d817; /* Cambia a tu color preferido */
+  }
 }

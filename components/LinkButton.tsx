@@ -19,7 +19,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       rel="noopener noreferrer"
       className="w-full block"
     >
-      <button className="bg-slate-900 text-white py-4 px-6 w-full max-w-full rounded-full hover:bg-slate-800 transition-colors shadow-md text-lg flex items-center relative">
+      <button className="bg-slate-800 text-white py-4 px-6 w-full max-w-full rounded-full hover:bg-slate-700 transition-colors shadow-md text-lg flex items-center relative">
         {iconUrl && (
           <Image
             src={iconUrl}
@@ -30,7 +30,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           />
         )}
         <div className="absolute left-0 right-0 flex justify-center">
-          <span>{label}</span>
+          <span className="hover-text">{label}</span>
         </div>
       </button>
     </a>
