@@ -8,32 +8,32 @@ const Home: React.FC = () => {
     {
       id: 1,
       label: "ERP con Odoo",
-      url: "https://www.jzolutions.com",
-      iconUrl: "/github.png",
+      url: "https://www.jzolutions.com/landing/lead-generation",
+      iconUrl: "/erp.png",
     },
     {
       id: 2,
       label: "Canal de Youtube",
       url: "https://www.youtube.com/@jzolutions",
-      iconUrl: "/github.png",
+      iconUrl: "/youtube.png",
     },
     {
       id: 3,
       label: "Siguenos Facebook",
-      url: "https://www.google.com",
-      iconUrl: "/github.png",
+      url: "https://www.facebook.com/profile.php?id=100068116758884",
+      iconUrl: "/facebook.png",
     },
     {
       id: 4,
       label: "Webs desde 1 sol",
-      url: "https://www.google.com",
-      iconUrl: "/github.png",
+      url: "https://www.jzolutions.com",
+      iconUrl: "/web.png",
     },
     {
       id:5,
       label: "Instagram",
       url: "https://www.instagram.com/jzolutions/",
-      iconUrl: "/github.png",
+      iconUrl: "/instagram.png",
     },
   ];
 
