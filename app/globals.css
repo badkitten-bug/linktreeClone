@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Outfit:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /*
+  
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  */
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,11 +25,11 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    transparent
+  ),
+  rgb(var(--background-end-rgb));
 }
 
 @layer utilities {
@@ -36,5 +38,14 @@ body {
   }
   .hover-text:hover {
     color: #d5d817; /* Cambia a tu color preferido */
+  }
+  .text-color-verde{
+    color: #134768;
+  }
+  .bg-custom-verde {
+    background-color: #075878;
+  }
+  .bg-custom-rojo {
+    background-color: #f52a34;
   }
 }

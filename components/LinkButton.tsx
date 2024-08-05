@@ -12,14 +12,14 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   iconUrl,
   customClass,
 }) => (
-  <div className={`w-full sm:w-auto mt-4 ${customClass}`}>
+  <div className={`w-full sm:w-auto mt-4 `}>
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
       className="w-full block"
     >
-      <button className="bg-slate-800 text-white py-4 px-6 w-full max-w-full rounded-full hover:bg-slate-700 transition-colors shadow-md text-lg flex items-center relative">
+      <button className={`bg-custom-rojo text-white py-5 px-6 w-full max-w-full rounded-full transition-colors shadow-md text-lg flex items-center relative ${customClass}`}>
         {iconUrl && (
           <Image
             src={iconUrl}
@@ -30,7 +30,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           />
         )}
         <div className="absolute left-0 right-0 flex justify-center">
-          <span className="hover-text">{label}</span>
+          <span className="hover-text font-outfit font-extrabold">{label}</span>
         </div>
       </button>
     </a>
